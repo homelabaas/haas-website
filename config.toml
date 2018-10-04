@@ -1,0 +1,36 @@
+baseURL = "https://homelabaas.io/"
+languageCode = "en-us"
+title = "Homelab as a Service"
+theme = "hugo-bootstrap"
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Google analytics
+googleAnalytics = "UA-47268287-3"
+
+[languages.en]
+  languageName = "English"
+
+  # Replace the default footer message with a localized message
+  # copyright = "Hugo template made with ❤ by Xzya"
+
+  [[languages.en.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3
+
+# Links format
+
+[permalinks]
+  post = "/:year/:month/:title/"
