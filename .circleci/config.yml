@@ -19,6 +19,8 @@ jobs:
     docker:
       - image: mrgeoffrich/awscli-container:latest
     steps:
+      - attach_workspace:
+          at: .
       - run:
           name: Deploy to S3
           command: aws s3 cp ./public/ s3://homelabaas-website/homelabaas.io --recursive
