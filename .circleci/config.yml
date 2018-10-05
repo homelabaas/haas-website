@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: mrgeoffrich/hugodocker:latest
+    steps:
+      - checkout
+      - run:
+          name: Check versions and setup CLI
+          command: |
+            hugo version
+      - run:
+          name: Build site
+          command: hugo
+  deploy:
+    docker:
+      - image: mrgeoffrich/awscli-container:latest
+    steps:
+      - run:
+          name: Deploy to S3
+          command: aws s3 cp ./public/ s3://homelabaas-website/homelabaas.io --recursive
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
