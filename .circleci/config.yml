@@ -6,9 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Check versions and setup CLI
-          command: |
-            hugo version
+          name: Check version
+          command: hugo version
       - run:
           name: Build site
           command: hugo
