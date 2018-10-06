@@ -9,25 +9,25 @@ theme = "hugo-bootstrap"
   category = "categories"
 
 # Google analytics
-googleAnalytics = "UA-47268287-3"
+googleAnalytics = "UA-16039647-5"
 
 [languages.en]
   languageName = "English"
 
   # Replace the default footer message with a localized message
-  # copyright = "Hugo template made with ❤ by Xzya"
+  # copyright = "Copyright Geoff Rich"
 
   [[languages.en.menu.main]]
-    url = "/"
-    name = "Home"
+    url = "/features/"
+    name = "Features"
     weight = 1
   [[languages.en.menu.main]]
-    url = "/about/"
-    name = "About"
+    url = "https://docs.homelabaas.io"
+    name = "Docs"
     weight = 2
   [[languages.en.menu.main]]
-    url = "/contact/"
-    name = "Contact"
+    url = "https://github.com/homelabaas"
+    name = "Github"
     weight = 3
 
 # Links format
