@@ -1,6 +1,6 @@
 ---
 title: Installation Tool Ready
-date: 2018-10-16
+date: 2018-10-15
 tags: ["bootstrap","haas"]
 ---
 
