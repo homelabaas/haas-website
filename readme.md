@@ -16,4 +16,4 @@ Run `./stop-dev.sh` or `stop-dev.ps1` to stop the container.
 
 ## Deployment
 
-Pusing to master will fire off a Circle CI build, which will automatically deploy the contents to production.
+Pushing to master will fire off a Circle CI build, which will automatically deploy the contents to production.
